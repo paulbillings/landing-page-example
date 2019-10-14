@@ -11,13 +11,22 @@ html {
 }
 
 h1 {
+	display: inline-block;
+	padding-right: 1rem;
+	padding-top: 1rem;
 	font-size: 3rem;
 	color: white;
 	text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 }
 
+h3 {
+	display: inline-block;
+	color: grey;
+	text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
 .buffer {
-	height: 22rem;
+	height: 25rem;
 }
 
 .btn {
@@ -29,3 +38,32 @@ h1 {
 .btn-xl {
 	padding: 1rem 2rem;
 }
+
+.footer {
+	padding-top: 2rem;
+}
+
+
+/*ipad pro portrait mode*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	
+  	.footer {
+		padding-top: 40rem;
+	}
+
+  }
+
+  /*ipad*/
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  	.footer {
+		padding-top: 20rem;
+	}
+
+  }
